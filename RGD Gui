@@ -1,0 +1,788 @@
+-- Game: Randomly Generated Droids
+
+local RGDGui = Instance.new("ScreenGui")
+local SGDFrame = Instance.new("Frame")
+local MenuFrame = Instance.new("Frame")
+local TitleLabel = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local UIStroke = Instance.new("UIStroke")
+local Main = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local UIStroke_2 = Instance.new("UIStroke")
+local Credits = Instance.new("TextLabel")
+local Teleport = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local UIStroke_3 = Instance.new("UIStroke")
+local Player = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UIStroke_4 = Instance.new("UIStroke")
+local Credits_2 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local UIStroke_5 = Instance.new("UIStroke")
+local Destroy = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local UIStroke_6 = Instance.new("UIStroke")
+local UICorner_7 = Instance.new("UICorner")
+local MainFrame = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local StopDroids = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local KillDroids = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local TeleportFrame = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
+local ServerHop = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local PlayerFrame = Instance.new("Frame")
+local UICorner_13 = Instance.new("UICorner")
+local JumpPower = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local Walkspeed = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local SpeedBox = Instance.new("TextBox")
+local UICorner_17 = Instance.new("UICorner")
+local JumpBox = Instance.new("TextBox")
+local UICorner_18 = Instance.new("UICorner")
+local CreditsFrame = Instance.new("Frame")
+local UICorner_19 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local MiscFrame = Instance.new("Frame")
+local UICorner_20 = Instance.new("UICorner")
+local Heal = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
+local InfiniteCircuits = Instance.new("TextButton")
+local UICorner_22 = Instance.new("UICorner")
+local InfiniteDefense = Instance.new("TextButton")
+local UICorner_23 = Instance.new("UICorner")
+local InfiniteStrength = Instance.new("TextButton")
+local UICorner_24 = Instance.new("UICorner")
+local InfiniteWinsPoints = Instance.new("TextButton")
+local UICorner_25 = Instance.new("UICorner")
+local Misc = Instance.new("TextButton")
+local UICorner_26 = Instance.new("UICorner")
+local Reminder_2 = Instance.new("TextLabel")
+local ClickStart = Instance.new("TextButton")
+local UICorner_27 = Instance.new("UICorner")
+local DestroyFrame = Instance.new("Frame")
+local UICorner_28 = Instance.new("UICorner")
+local UIStroke_7 = Instance.new("UIStroke")
+local TextLabel_5 = Instance.new("TextLabel")
+local Reminder_3 = Instance.new("TextLabel")
+
+--Properties:
+
+RGDGui.Name = "RGDGui"
+RGDGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+RGDGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+SGDFrame.Name = "SGDFrame"
+SGDFrame.Parent = RGDGui
+SGDFrame.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+SGDFrame.Position = UDim2.new(0.346725941, 0, 0.258904129, 0)
+SGDFrame.Size = UDim2.new(0.30698052, 0, 0.480821908, 0)
+SGDFrame.ZIndex = 2
+SGDFrame = SGDFrame
+SGDFrame.Draggable = true
+SGDFrame.Active = true
+SGDFrame.Selectable = true
+
+MenuFrame.Name = "MenuFrame"
+MenuFrame.Parent = SGDFrame
+MenuFrame.BackgroundColor3 = Color3.fromRGB(60, 0, 182)
+MenuFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+MenuFrame.BorderSizePixel = 0
+MenuFrame.Size = UDim2.new(0.275892496, 0, 0.99999994, 0)
+
+TitleLabel.Name = "TitleLabel"
+TitleLabel.Parent = MenuFrame
+TitleLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TitleLabel.BackgroundTransparency = 1.000
+TitleLabel.Position = UDim2.new(0.0150610982, 0, 0, 0)
+TitleLabel.Size = UDim2.new(0.992339194, 0, 0.139601111, 0)
+TitleLabel.Font = Enum.Font.Arcade
+TitleLabel.Text = "RGD Gui"
+TitleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TitleLabel.TextScaled = true
+TitleLabel.TextSize = 14.000
+TitleLabel.TextStrokeTransparency = 0.000
+TitleLabel.TextWrapped = true
+
+UICorner.CornerRadius = UDim.new(0, 3)
+UICorner.Parent = MenuFrame
+
+UIStroke.Color = Color3.new(0, 0, 0)
+UIStroke.Thickness = 2
+UIStroke.Parent = MenuFrame
+
+Main.Name = "Main"
+Main.Parent = MenuFrame
+Main.BackgroundColor3 = Color3.fromRGB(33, 0, 100)
+Main.Position = UDim2.new(0.0814915821, 0, 0.227920204, 0)
+Main.Size = UDim2.new(0.845401227, 0, 0.0626780689, 0)
+Main.Font = Enum.Font.Arcade
+Main.Text = "Main"
+Main.TextColor3 = Color3.fromRGB(255, 255, 255)
+Main.TextScaled = true
+Main.TextSize = 14.000
+Main.TextStrokeTransparency = 0.000
+Main.TextWrapped = true
+Main.MouseButton1Click:Connect(function()
+	Main.BackgroundTransparency = 0
+	Credits_2.BackgroundTransparency = 1
+	Destroy.BackgroundTransparency = 1
+	Player.BackgroundTransparency = 1
+	Teleport.BackgroundTransparency = 1
+	Misc.BackgroundTransparency = 1
+	MiscFrame.Visible = false
+	CreditsFrame.Visible = false
+	MainFrame.Visible = true
+	DestroyFrame.Visible = false
+	PlayerFrame.Visible = false
+	TeleportFrame.Visible = false
+end)
+
+UICorner_2.CornerRadius = UDim.new(0, 5)
+UICorner_2.Parent = Main
+
+Credits.Name = "Credits"
+Credits.Parent = MenuFrame
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.Position = UDim2.new(0.015060856, 0, 0.11396008, 0)
+Credits.Size = UDim2.new(0.992339313, 0, 0.042735029, 0)
+Credits.Font = Enum.Font.SciFi
+Credits.Text = "By Dekko & Firee"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextScaled = true
+Credits.TextSize = 14.000
+Credits.TextStrokeTransparency = 0.000
+Credits.TextWrapped = true
+
+Teleport.Name = "Teleport"
+Teleport.Parent = MenuFrame
+Teleport.BackgroundColor3 = Color3.fromRGB(33, 0, 100)
+Teleport.BackgroundTransparency = 1.000
+Teleport.Position = UDim2.new(0.074312225, 0, 0.31908831, 0)
+Teleport.Size = UDim2.new(0.845401227, 0, 0.0626780689, 0)
+Teleport.Font = Enum.Font.Arcade
+Teleport.Text = "Teleport"
+Teleport.TextColor3 = Color3.fromRGB(255, 255, 255)
+Teleport.TextScaled = true
+Teleport.TextSize = 14.000
+Teleport.TextStrokeTransparency = 0.000
+Teleport.TextWrapped = true
+Teleport.MouseButton1Click:Connect(function()
+	Main.BackgroundTransparency = 1
+	Credits_2.BackgroundTransparency = 1
+	Destroy.BackgroundTransparency = 1
+	Player.BackgroundTransparency = 1
+	Teleport.BackgroundTransparency = 0
+	Misc.BackgroundTransparency = 1
+	MiscFrame.Visible = false
+	CreditsFrame.Visible = false
+	DestroyFrame.Visible = false
+	MainFrame.Visible = false
+	PlayerFrame.Visible = false
+	TeleportFrame.Visible = true
+end)
+
+UICorner_3.CornerRadius = UDim.new(0, 5)
+UICorner_3.Parent = Teleport
+
+Player.Name = "Player"
+Player.Parent = MenuFrame
+Player.BackgroundColor3 = Color3.fromRGB(33, 0, 100)
+Player.BackgroundTransparency = 1.000
+Player.Position = UDim2.new(0.074312225, 0, 0.413105428, 0)
+Player.Size = UDim2.new(0.845401227, 0, 0.0626780689, 0)
+Player.Font = Enum.Font.Arcade
+Player.Text = "Player"
+Player.TextColor3 = Color3.fromRGB(255, 255, 255)
+Player.TextScaled = true
+Player.TextSize = 14.000
+Player.TextStrokeTransparency = 0.000
+Player.TextWrapped = true
+Player.MouseButton1Click:Connect(function()
+	Main.BackgroundTransparency = 1
+	Credits_2.BackgroundTransparency = 1
+	Destroy.BackgroundTransparency = 1
+	Player.BackgroundTransparency = 0
+	Teleport.BackgroundTransparency = 1
+	Misc.BackgroundTransparency = 1
+	MiscFrame.Visible = false
+	CreditsFrame.Visible = false
+	DestroyFrame.Visible = false
+	MainFrame.Visible = false
+	PlayerFrame.Visible = true
+	TeleportFrame.Visible = false
+end)
+
+UICorner_4.CornerRadius = UDim.new(0, 5)
+UICorner_4.Parent = Player
+
+Credits_2.Name = "Credits"
+Credits_2.Parent = MenuFrame
+Credits_2.BackgroundColor3 = Color3.fromRGB(33, 0, 100)
+Credits_2.BackgroundTransparency = 1.000
+Credits_2.Position = UDim2.new(0.067, 0,0.59, 0)
+Credits_2.Size = UDim2.new(0.845401227, 0, 0.0626780689, 0)
+Credits_2.Font = Enum.Font.Arcade
+Credits_2.Text = "Credits"
+Credits_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits_2.TextScaled = true
+Credits_2.TextSize = 14.000
+Credits_2.TextStrokeTransparency = 0.000
+Credits_2.TextWrapped = true
+Credits_2.MouseButton1Click:Connect(function()
+	Main.BackgroundTransparency = 1
+	Credits_2.BackgroundTransparency = 0
+	Destroy.BackgroundTransparency = 1
+	Player.BackgroundTransparency = 1
+	Teleport.BackgroundTransparency = 1
+	Misc.BackgroundTransparency = 1
+	CreditsFrame.Visible = true
+	MainFrame.Visible = false
+	DestroyFrame.Visible = false
+	PlayerFrame.Visible = false
+	TeleportFrame.Visible = false
+	MiscFrame.Visible = false
+end)
+
+UICorner_5.CornerRadius = UDim.new(0, 5)
+UICorner_5.Parent = Credits_2
+
+Destroy.Name = "Destroy"
+Destroy.Parent = MenuFrame
+Destroy.BackgroundColor3 = Color3.fromRGB(33, 0, 100)
+Destroy.BackgroundTransparency = 1.000
+Destroy.Position = UDim2.new(0.067, 0,0.684, 0)
+Destroy.Size = UDim2.new(0.845401227, 0, 0.0626780689, 0)
+Destroy.Font = Enum.Font.Arcade
+Destroy.Text = "Destroy"
+Destroy.TextColor3 = Color3.fromRGB(255, 255, 255)
+Destroy.TextScaled = true
+Destroy.TextSize = 14.000
+Destroy.TextStrokeTransparency = 0.000
+Destroy.TextWrapped = true
+Destroy.MouseButton1Click:Connect(function()
+	Main.BackgroundTransparency = 1
+	Credits_2.BackgroundTransparency = 1
+	Destroy.BackgroundTransparency = 0
+	Player.BackgroundTransparency = 1
+	Teleport.BackgroundTransparency = 1
+	Misc.BackgroundTransparency = 1
+	CreditsFrame.Visible = false
+	MiscFrame.Visible = false
+	DestroyFrame.Visible = true
+	MainFrame.Visible = false
+	PlayerFrame.Visible = false
+	TeleportFrame.Visible = false
+	Reminder_3.Visible = true
+	game.Players.LocalPlayer.PlayerGui.RGDGui:Destroy()
+end)
+
+UICorner_6.CornerRadius = UDim.new(0, 5)
+UICorner_6.Parent = Destroy
+
+UICorner_7.CornerRadius = UDim.new(0, 5)
+UICorner_7.Parent = SGDFrame
+
+UIStroke_2.Color = Color3.new(0, 0, 0)
+UIStroke_2.Thickness = 2
+UIStroke_2.Parent = SGDFrame
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = SGDFrame
+MainFrame.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+MainFrame.BackgroundTransparency = 1.000
+MainFrame.Position = UDim2.new(0.277934164, 0, 8.69446666e-08, 0)
+MainFrame.Size = UDim2.new(0.722065985, 0, 0.999999821, 0)
+MainFrame.ZIndex = 2
+
+UICorner_8.CornerRadius = UDim.new(0, 5)
+UICorner_8.Parent = MainFrame
+
+UIStroke_3.Color = Color3.new(0, 0, 0)
+UIStroke_3.Thickness = 2
+UIStroke_3.Parent = MainFrame
+
+StopDroids.Name = "StopDroids"
+StopDroids.Parent = MainFrame
+StopDroids.BackgroundColor3 = Color3.fromRGB(60, 0, 182)
+StopDroids.Position = UDim2.new(0.067, 0,0.483, 0)
+StopDroids.Size = UDim2.new(0.866714358, 0, 0.104358107, 0)
+StopDroids.Font = Enum.Font.Arcade
+StopDroids.Text = "Stop Droids"
+StopDroids.TextColor3 = Color3.fromRGB(255, 255, 255)
+StopDroids.TextScaled = true
+StopDroids.TextSize = 14.000
+StopDroids.TextStrokeTransparency = 0.000
+StopDroids.TextWrapped = true
+StopDroids.MouseButton1Click:Connect(function()
+	if StopDroids.Text == "Stop Droids" then
+
+		setsimulationradius(math.huge,math.huge)
+
+		while wait() do
+			for i,v in pairs(game.Workspace.Room.Enemies:GetDescendants()) do
+				if v:IsA("Humanoid") and v.Parent.Name ~= game.Players.LocalPlayer.Name then
+					v.WalkSpeed = 0
+				end
+			end
+		end		
+	end		
+end)
+
+
+UICorner_9.CornerRadius = UDim.new(0, 5)
+UICorner_9.Parent = StopDroids
+
+KillDroids.Name = "KillDroids"
+KillDroids.Parent = MainFrame
+KillDroids.BackgroundColor3 = Color3.fromRGB(60, 0, 182)
+KillDroids.Position = UDim2.new(0.067, 0,0.345, 0)
+KillDroids.Size = UDim2.new(0.866922736, 0, 0.104768679, 0)
+KillDroids.Font = Enum.Font.Arcade
+KillDroids.Text = "Kill Droids"
+KillDroids.TextColor3 = Color3.fromRGB(255, 255, 255)
+KillDroids.TextScaled = true
+KillDroids.TextSize = 14.000
+KillDroids.TextStrokeTransparency = 0.000
+KillDroids.TextWrapped = true
+KillDroids.MouseButton1Click:Connect(function()
+	setsimulationradius(math.huge,math.huge)
+
+	while wait() do
+		for i,v in pairs(game.Workspace:GetDescendants()) do
+			if v:IsA("Humanoid") and v.Parent.Name ~= game.Players.LocalPlayer.Name then
+				v.Health = 0
+			end
+		end
+	end
+end)
+
+UICorner_10.CornerRadius = UDim.new(0, 5)
+UICorner_10.Parent = KillDroids
+
+TeleportFrame.Name = "TeleportFrame"
+TeleportFrame.Parent = SGDFrame
+TeleportFrame.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+TeleportFrame.BackgroundTransparency = 1.000
+TeleportFrame.Position = UDim2.new(0.277934164, 0, 8.69446666e-08, 0)
+TeleportFrame.Size = UDim2.new(0.722065985, 0, 0.999999821, 0)
+TeleportFrame.Visible = false
+TeleportFrame.ZIndex = 2
+
+UICorner_11.CornerRadius = UDim.new(0, 5)
+UICorner_11.Parent = TeleportFrame
+
+UIStroke_4.Color = Color3.new(0, 0, 0)
+UIStroke_4.Thickness = 2
+UIStroke_4.Parent = TeleportFrame
+
+ServerHop.Name = "ServerHop"
+ServerHop.Parent = TeleportFrame
+ServerHop.BackgroundColor3 = Color3.fromRGB(60, 0, 182)
+ServerHop.Position = UDim2.new(0.0673497617, 0, 0.44729352, 0)
+ServerHop.Size = UDim2.new(0.866922736, 0, 0.104768679, 0)
+ServerHop.Font = Enum.Font.Arcade
+ServerHop.Text = "Server Hop"
+ServerHop.TextColor3 = Color3.fromRGB(255, 255, 255)
+ServerHop.TextScaled = true
+ServerHop.TextSize = 14.000
+ServerHop.TextStrokeTransparency = 0.000
+ServerHop.TextWrapped = true
+ServerHop.MouseButton1Click:Connect(function()
+	game:GetService("TeleportService"):Teleport(5561268850, LocalPlayer)
+end)
+
+UICorner_12.CornerRadius = UDim.new(0, 5)
+UICorner_12.Parent = ServerHop
+
+PlayerFrame.Name = "PlayerFrame"
+PlayerFrame.Parent = SGDFrame
+PlayerFrame.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+PlayerFrame.BackgroundTransparency = 1.000
+PlayerFrame.Position = UDim2.new(0.277934164, 0, 8.69446666e-08, 0)
+PlayerFrame.Size = UDim2.new(0.722065985, 0, 0.999999821, 0)
+PlayerFrame.Visible = false
+PlayerFrame.ZIndex = 2
+
+UICorner_13.CornerRadius = UDim.new(0, 5)
+UICorner_13.Parent = PlayerFrame
+
+UIStroke_5.Color = Color3.new(0, 0, 0)
+UIStroke_5.Thickness = 2
+UIStroke_5.Parent = PlayerFrame
+
+JumpPower.Name = "JumpPower"
+JumpPower.Parent = PlayerFrame
+JumpPower.BackgroundColor3 = Color3.fromRGB(60, 0, 182)
+JumpPower.Position = UDim2.new(0.073, 0,0.497, 0)
+JumpPower.Size = UDim2.new(0.528, 0,0.104, 0)
+JumpPower.Font = Enum.Font.Arcade
+JumpPower.Text = "JumpPower"
+JumpPower.TextColor3 = Color3.fromRGB(255, 255, 255)
+JumpPower.TextScaled = true
+JumpPower.TextSize = 14.000
+JumpPower.TextStrokeTransparency = 0.000
+JumpPower.TextWrapped = true
+JumpPower.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = game.Players.LocalPlayer.PlayerGui.RGDGui.SGDFrame.PlayerFrame.JumpBox.Text
+end)
+
+UICorner_14.CornerRadius = UDim.new(0, 5)
+UICorner_14.Parent = JumpPower
+
+Walkspeed.Name = "Walkspeed"
+Walkspeed.Parent = PlayerFrame
+Walkspeed.BackgroundColor3 = Color3.fromRGB(60, 0, 182)
+Walkspeed.Position = UDim2.new(0.073, 0,0.365, 0)
+Walkspeed.Size = UDim2.new(0.528, 0,0.105, 0)
+Walkspeed.Font = Enum.Font.Arcade
+Walkspeed.Text = "WalkSpeed"
+Walkspeed.TextColor3 = Color3.fromRGB(255, 255, 255)
+Walkspeed.TextScaled = true
+Walkspeed.TextSize = 14.000
+Walkspeed.TextStrokeTransparency = 0.000
+Walkspeed.TextWrapped = true
+Walkspeed.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = game.Players.LocalPlayer.PlayerGui.RGDGui.SGDFrame.PlayerFrame.SpeedBox.Text
+end)
+
+UICorner_15.CornerRadius = UDim.new(0, 5)
+UICorner_15.Parent = Walkspeed
+
+SpeedBox.Name = "SpeedBox"
+SpeedBox.Parent = PlayerFrame
+SpeedBox.BackgroundColor3 = Color3.fromRGB(60, 0, 182)
+SpeedBox.Position = UDim2.new(0.629, 0,0.365, 0)
+SpeedBox.Size = UDim2.new(0.311, 0,0.105, 0)
+SpeedBox.Font = Enum.Font.Arcade
+SpeedBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+SpeedBox.PlaceholderText = "0"
+SpeedBox.Text = ""
+SpeedBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpeedBox.TextScaled = true
+SpeedBox.TextSize = 14.000
+SpeedBox.TextStrokeTransparency = 0.000
+SpeedBox.TextWrapped = true
+
+UICorner_17.CornerRadius = UDim.new(0, 5)
+UICorner_17.Parent = SpeedBox
+
+JumpBox.Name = "JumpBox"
+JumpBox.Parent = PlayerFrame
+JumpBox.BackgroundColor3 = Color3.fromRGB(60, 0, 182)
+JumpBox.Position = UDim2.new(0.629, 0,0.496, 0)
+JumpBox.Size = UDim2.new(0.311, 0,0.105, 0)
+JumpBox.Font = Enum.Font.Arcade
+JumpBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+JumpBox.PlaceholderText = "0"
+JumpBox.Text = ""
+JumpBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+JumpBox.TextScaled = true
+JumpBox.TextSize = 14.000
+JumpBox.TextStrokeTransparency = 0.000
+JumpBox.TextWrapped = true
+
+UICorner_18.CornerRadius = UDim.new(0, 5)
+UICorner_18.Parent = JumpBox
+
+CreditsFrame.Name = "CreditsFrame"
+CreditsFrame.Parent = SGDFrame
+CreditsFrame.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+CreditsFrame.BackgroundTransparency = 1.000
+CreditsFrame.Position = UDim2.new(0.277934164, 0, 8.69446666e-08, 0)
+CreditsFrame.Size = UDim2.new(0.722065985, 0, 0.999999821, 0)
+CreditsFrame.Visible = false
+CreditsFrame.ZIndex = 2
+
+UIStroke_6.Color = Color3.new(0, 0, 0)
+UIStroke_6.Thickness = 2
+UIStroke_6.Parent = CreditsFrame
+
+UICorner_19.CornerRadius = UDim.new(0, 5)
+UICorner_19.Parent = CreditsFrame
+
+TextLabel.Parent = CreditsFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0799124688, 0, 0.321937472, 0)
+TextLabel.Size = UDim2.new(0.841334045, 0, 0.062677905, 0)
+TextLabel.Font = Enum.Font.Arcade
+TextLabel.Text = "Firee - Scripter"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextStrokeTransparency = 0.000
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = CreditsFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.0799124688, 0, 0.515669525, 0)
+TextLabel_2.Size = UDim2.new(0.841334045, 0, 0.045584064, 0)
+TextLabel_2.Font = Enum.Font.SciFi
+TextLabel_2.Text = "Discord: Dekko#1485"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextStrokeTransparency = 0.000
+TextLabel_2.TextWrapped = true
+
+TextLabel_3.Parent = CreditsFrame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.0799124688, 0, 0.452991635, 0)
+TextLabel_3.Size = UDim2.new(0.841334045, 0, 0.062677905, 0)
+TextLabel_3.Font = Enum.Font.Arcade
+TextLabel_3.Text = "Dekko - Gui"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextStrokeTransparency = 0.000
+TextLabel_3.TextWrapped = true
+
+TextLabel_4.Parent = CreditsFrame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.0799124688, 0, 0.384615362, 0)
+TextLabel_4.Size = UDim2.new(0.841334045, 0, 0.045584064, 0)
+TextLabel_4.Font = Enum.Font.SciFi
+TextLabel_4.Text = "Discord: Firee#7697"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextStrokeTransparency = 0.000
+TextLabel_4.TextWrapped = true
+
+Misc.Name = "Misc"
+Misc.Parent = MenuFrame
+Misc.BackgroundColor3 = Color3.fromRGB(33, 0, 100)
+Misc.BackgroundTransparency = 1.000
+Misc.Position = UDim2.new(0.0743122101, 0, 0.504273534, 0)
+Misc.Size = UDim2.new(0.845401227, 0, 0.0626780689, 0)
+Misc.Font = Enum.Font.Arcade
+Misc.Text = "Misc"
+Misc.TextColor3 = Color3.fromRGB(255, 255, 255)
+Misc.TextScaled = true
+Misc.TextSize = 14.000
+Misc.TextStrokeTransparency = 0.000
+Misc.TextWrapped = true
+Misc.MouseButton1Click:Connect(function()
+	Main.BackgroundTransparency = 1
+	Credits_2.BackgroundTransparency = 1
+	Destroy.BackgroundTransparency = 1
+	Player.BackgroundTransparency = 1
+	Teleport.BackgroundTransparency = 1
+	Misc.BackgroundTransparency = 0
+	MiscFrame.Visible = true
+	CreditsFrame.Visible = false
+	MainFrame.Visible = false
+	PlayerFrame.Visible = false
+	TeleportFrame.Visible = false
+end)
+
+UICorner_26.CornerRadius = UDim.new(0, 5)
+UICorner_26.Parent = Misc
+
+MiscFrame.Name = "MiscFrame"
+MiscFrame.Parent = SGDFrame
+MiscFrame.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+MiscFrame.BackgroundTransparency = 1.000
+MiscFrame.Position = UDim2.new(0.277934164, 0, 8.69446666e-08, 0)
+MiscFrame.Size = UDim2.new(0.722065985, 0, 0.999999821, 0)
+MiscFrame.Visible = false
+MiscFrame.ZIndex = 2
+
+UICorner_20.CornerRadius = UDim.new(0, 5)
+UICorner_20.Parent = MiscFrame
+
+Heal.Name = "Heal"
+Heal.Parent = MiscFrame
+Heal.BackgroundColor3 = Color3.fromRGB(60, 0, 182)
+Heal.Position = UDim2.new(0.067, 0,0.452, 0)
+Heal.Size = UDim2.new(0.866714358, 0, 0.104358107, 0)
+Heal.Font = Enum.Font.Arcade
+Heal.Text = "Heal"
+Heal.TextColor3 = Color3.fromRGB(255, 255, 255)
+Heal.TextScaled = true
+Heal.TextSize = 14.000
+Heal.TextStrokeTransparency = 0.000
+Heal.TextWrapped = true
+Heal.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.Health = 100
+end)
+
+UICorner_21.CornerRadius = UDim.new(0, 5)
+UICorner_21.Parent = Heal
+
+InfiniteCircuits.Name = "InfiniteCircuits"
+InfiniteCircuits.Parent = MiscFrame
+InfiniteCircuits.BackgroundColor3 = Color3.fromRGB(60, 0, 182)
+InfiniteCircuits.Position = UDim2.new(0.067, 0,0.313, 0)
+InfiniteCircuits.Size = UDim2.new(0.866922736, 0, 0.104768679, 0)
+InfiniteCircuits.Font = Enum.Font.Arcade
+InfiniteCircuits.Text = "Infinite Circuits"
+InfiniteCircuits.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteCircuits.TextScaled = true
+InfiniteCircuits.TextSize = 14.000
+InfiniteCircuits.TextStrokeTransparency = 0.000
+InfiniteCircuits.TextWrapped = true
+InfiniteCircuits.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.NumValues.Circuits.Value = 69420
+end)
+
+UICorner_22.CornerRadius = UDim.new(0, 5)
+UICorner_22.Parent = InfiniteCircuits
+
+InfiniteDefense.Name = "InfiniteDefense"
+InfiniteDefense.Parent = MiscFrame
+InfiniteDefense.BackgroundColor3 = Color3.fromRGB(60, 0, 182)
+InfiniteDefense.Position = UDim2.new(0.067, 0,0.589, 0)
+InfiniteDefense.Size = UDim2.new(0.866714358, 0, 0.104358107, 0)
+InfiniteDefense.Font = Enum.Font.Arcade
+InfiniteDefense.Text = "Infinite Defense"
+InfiniteDefense.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteDefense.TextScaled = true
+InfiniteDefense.TextSize = 14.000
+InfiniteDefense.TextStrokeTransparency = 0.000
+InfiniteDefense.TextWrapped = true
+InfiniteDefense.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.NumValues.Defense.Value = 694200000
+end)
+
+UICorner_23.CornerRadius = UDim.new(0, 5)
+UICorner_23.Parent = InfiniteDefense
+
+InfiniteStrength.Name = "InfiniteStrength"
+InfiniteStrength.Parent = MiscFrame
+InfiniteStrength.BackgroundColor3 = Color3.fromRGB(60, 0, 182)
+InfiniteStrength.Position = UDim2.new(0.067, 0,0.731, 0)
+InfiniteStrength.Size = UDim2.new(0.866714358, 0, 0.104358107, 0)
+InfiniteStrength.Font = Enum.Font.Arcade
+InfiniteStrength.Text = "Infinite Strength"
+InfiniteStrength.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteStrength.TextScaled = true
+InfiniteStrength.TextSize = 14.000
+InfiniteStrength.TextStrokeTransparency = 0.000
+InfiniteStrength.TextWrapped = true
+InfiniteStrength.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.NumValues.Strength.Value = 694200000
+end)
+
+UICorner_24.CornerRadius = UDim.new(0, 5)
+UICorner_24.Parent = InfiniteStrength
+
+InfiniteWinsPoints.Name = "InfiniteWins/Points"
+InfiniteWinsPoints.Parent = MiscFrame
+InfiniteWinsPoints.BackgroundColor3 = Color3.fromRGB(60, 0, 182)
+InfiniteWinsPoints.Position = UDim2.new(0.067, 0,0.179, 0)
+InfiniteWinsPoints.Size = UDim2.new(0.866922736, 0, 0.104768679, 0)
+InfiniteWinsPoints.Font = Enum.Font.Arcade
+InfiniteWinsPoints.Text = "Infinite Wins & Points"
+InfiniteWinsPoints.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteWinsPoints.TextScaled = true
+InfiniteWinsPoints.TextSize = 14.000
+InfiniteWinsPoints.TextStrokeTransparency = 0.000
+InfiniteWinsPoints.TextWrapped = true
+InfiniteWinsPoints.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.leaderstats.Wins.Value = 69420000000
+	game.Players.LocalPlayer.leaderstats.Points.Value = 69420000000
+end)
+
+UICorner_25.CornerRadius = UDim.new(0, 5)
+UICorner_25.Parent = InfiniteWinsPoints
+
+Reminder_2.Name = "Reminder"
+Reminder_2.Parent = MiscFrame
+Reminder_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Reminder_2.BackgroundTransparency = 1.000
+Reminder_2.Position = UDim2.new(0.08, 0,0.858, 0)
+Reminder_2.Size = UDim2.new(0.841334045, 0, 0.0341878682, 0)
+Reminder_2.Font = Enum.Font.SciFi
+Reminder_2.Text = "(Please keep in mind this is all fake and made for detail)"
+Reminder_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Reminder_2.TextScaled = true
+Reminder_2.TextSize = 14.000
+Reminder_2.TextStrokeTransparency = 0.000
+Reminder_2.TextWrapped = true
+
+ClickStart.Name = "ClickStart"
+ClickStart.Parent = MainFrame
+ClickStart.BackgroundColor3 = Color3.fromRGB(60, 0, 182)
+ClickStart.Position = UDim2.new(0.0673497617, 0, 0.617327988, 0)
+ClickStart.Size = UDim2.new(0.866714358, 0, 0.104358107, 0)
+ClickStart.Font = Enum.Font.Arcade
+ClickStart.Text = "Click Start"
+ClickStart.TextColor3 = Color3.fromRGB(255, 255, 255)
+ClickStart.TextScaled = true
+ClickStart.TextSize = 14.000
+ClickStart.TextStrokeTransparency = 0.000
+ClickStart.TextWrapped = true
+ClickStart.MouseButton1Click:Connect(function()
+	fireclickdetector(game:GetService("Workspace").Room.Enemies.StartButton.ClickDetector)
+end)
+
+UICorner_27.CornerRadius = UDim.new(0, 5)
+UICorner_27.Parent = ClickStart
+
+DestroyFrame.Name = "DestroyFrame"
+DestroyFrame.Parent = SGDFrame
+DestroyFrame.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+DestroyFrame.BackgroundTransparency = 1.000
+DestroyFrame.Position = UDim2.new(0.277934164, 0, 8.69446666e-08, 0)
+DestroyFrame.Size = UDim2.new(0.722065985, 0, 0.999999821, 0)
+DestroyFrame.Visible = false
+DestroyFrame.ZIndex = 2
+
+UICorner_28.CornerRadius = UDim.new(0, 5)
+UICorner_28.Parent = DestroyFrame
+
+UIStroke_7.Color = Color3.new(0, 0, 0)
+UIStroke_7.Thickness = 2
+UIStroke_7.Parent = DestroyFrame
+
+TextLabel_5.Parent = DestroyFrame
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.0799124688, 0, 0.467236638, 0)
+TextLabel_5.Size = UDim2.new(0.841334045, 0, 0.062677905, 0)
+TextLabel_5.Font = Enum.Font.Arcade
+TextLabel_5.Text = "Destroying..."
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextStrokeTransparency = 0.000
+TextLabel_5.TextWrapped = true
+
+Reminder_3.Name = "Reminder"
+Reminder_3.Parent = MiscFrame
+Reminder_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Reminder_3.BackgroundTransparency = 1.000
+Reminder_3.Position = UDim2.new(0.0799125507, 0, 0.857550085, 0)
+Reminder_3.Size = UDim2.new(0.841334045, 0, 0.0341878682, 0)
+Reminder_3.Font = Enum.Font.SciFi
+Reminder_3.Text = "(Please keep in mind this is all fake and made for detail)"
+Reminder_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Reminder_3.TextScaled = true
+Reminder_3.TextSize = 14.000
+Reminder_3.TextStrokeTransparency = 0.000
+Reminder_3.TextWrapped = true
+
+-- Script
+
+while true do
+	TextLabel_5.Text = "Destroying"
+	wait(.5)
+	TextLabel_5.Text = "Destroying."
+	wait(.5)
+	TextLabel_5.Text = "Destroying.."
+	wait(.5)
+	TextLabel_5.Text = "Destroying..."
+	wait(.5)
+end
